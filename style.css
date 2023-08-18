@@ -1,0 +1,413 @@
+*{
+    background-color: rgb(59, 57, 57);
+    background-size: cover;  
+    background-position: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    line-height: 10px;
+    font-family: cursive;
+    color: aliceblue;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: cursive;
+}
+h3 {
+    font-size: 30px;
+    margin-top: 50px;
+
+    animation-name: up;
+    animation-duration: 2s;
+}
+.left:target {
+    transform: scale(1.2);
+}
+.line {
+    background-color: white;
+    height:3px;
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    margin-top: 60px;
+
+    animation-name: up2;
+    animation-duration: 2s;
+}
+body {
+    align-items: center;
+    margin-top: 50px;
+}
+.left {
+    animation-name: left;
+    animation-duration: 2s;
+}
+.center{
+    animation-name: center;
+    animation-duration: 2s;
+}
+
+@keyframes infinite-spinning {
+   from {
+    transform: rotate(0deg);
+   }
+   to {
+    transform: rotate(360deg);
+   }
+}
+.right{
+    animation-name: right;
+    animation-duration: 2s;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.newContainer {
+    display: flex;
+    justify-content: center;
+}
+.Pcontainer {
+    display: flex;
+    justify-content: center;
+}
+#naj {
+    
+    background-color: white; 
+    width: 400px; 
+    margin-left:100px; 
+    margin-top: 70px; 
+    height: 450px; 
+    top:0;
+    left:0;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    flex-direction:column-reverse;
+    display: block; /* Позволяет выравнивать элементы внутри */
+    align-items:center;  /*Выравнивание по высоте */
+    justify-content: end;  /*Выравнивание по ширине */
+    text-align: center;
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family: cursive;
+    float: left;
+    transition: transform 0.5 ease;
+    
+    
+    animation-name: left;
+    animation-duration: 2s;
+}
+#naj > a {
+    background-color: white;
+    font-family: cursive;
+    display: none;
+}
+.naj_nv, .naj_nvt {
+    display: none;
+}
+#naj_i4 {
+    margin-left: 0;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+}
+#naj_b {
+    transition: top 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+#naj_i3 {
+    left:0;
+    width: 400px;
+    height: 240px;
+    background-color: white;
+}
+#naj > p {
+    background-color: white;
+}
+#naj_i2 {
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    
+    left: 0;
+    margin-left: auto;
+}
+#naj_i1 {
+    left: 0;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    float:right;
+    border-radius: 10px;
+}
+@keyframes left {
+    from {
+        left: -1000px;
+    }
+    to {
+        left: 0px;
+    }
+}
+#nal {
+    background-color: white; 
+    width: 400px; 
+    position: relative;
+    margin-right: 100px;
+    margin-top: 70px; 
+    float:right;
+    height: 450px; 
+    border-radius: 10px;
+    text-align:left;
+    flex-direction: column-reverse;
+    display: inline-flex; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family:cursive;
+    background-image: url(https://mmoptsp.ru/image/cache/catalog/moysklad/5526-29-800x800.png);
+
+    animation-name: right;
+    animation-duration: 2s;
+}
+@keyframes right {
+    from {
+        right: -1000px;
+    }
+    to {
+        right: 0px;
+    }
+}
+#nam {
+    background-color: white; 
+    width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    float:left;
+    position: relative;
+    height: 450px; 
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column-reverse;
+    display: block; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family:cursive;
+}
+#nam_i1 {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+}
+ @keyframes center {
+    from {
+        opacity: 0;  /* Плавное появление */ 
+    }
+    to {
+        opacity: 1; 
+    } 
+} 
+#ai {
+    background-color: white; 
+    width: 400px; 
+    margin-left:100px; 
+    margin-top: 100px;
+    height: 450px; 
+    border-radius: 10px;
+    text-align: left;
+    flex-direction: column-reverse;
+    display: inline-flex; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family: cursive;
+    float: left;
+    position: relative;
+    /*background-image: url(https://mmoptsp.ru/image/cache/catalog/moysklad/s330-2-800x800.png);*/
+}
+#ai_img {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+#an {
+    background-color: white; 
+    width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    float:left;
+    height: 450px; 
+    border-radius: 10px;
+    text-align: left;
+    flex-direction: column-reverse;
+    display: inline-flex; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family:cursive;
+    position: relative;
+    background-image: url(https://destroyshop.ru/images/detailed/13239/8a743c3b1df711ed8990ac1f6b72b910_2d372a6c1e2311ed8990ac1f6b72b910.png);
+}
+#ac {
+    background-color: white; 
+    width: 400px; 
+    margin-right:100px;
+    margin-top: 100px; 
+    float: left;
+    height: 450px; 
+    border-radius: 10px;
+    text-align:left;
+    position: relative;
+    flex-direction: column-reverse;
+    display: inline-flex; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family:cursive;
+    background-image: url(https://cdn.sneakers123.com/release/3575753/adidas-climacool-vent-fz2388.jpg);
+}
+#prsx {
+    background-color: white; 
+    width: 400px; 
+    margin-left:100px; 
+    margin-right: auto;
+    margin-top: 50px;
+    height: 400px; 
+    border-radius: 10px;
+    text-align: left;
+    flex-direction: column-reverse;
+    display: inline-flex; 
+    align-items:center; 
+    justify-content: end;
+    padding-bottom: 10px; 
+    font-family: cursive;
+    float: left;
+    position: relative;
+    background-image: url(https://cdn.sneakers123.com/release/3799353/puma-rs-x-home-386889-01.jpg);
+}
+#prj {
+    background-color: white; 
+    width: 400px; 
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 50px;
+    float:left;
+    height: 400px; 
+    border-radius: 10px;
+    text-align: left;
+    flex-direction: column-reverse;
+    display: inline-flex; /* Позволяет выравнивать элементы внутри */
+    align-items:center; /* Выравнивание по высоте */
+    justify-content: end; /* Выравнивание по ширине */
+    padding-bottom: 10px; /* Отступ от нижнего края */
+    font-family:cursive;
+    position: relative;
+    background-image: url(https://static.street-beat.ru/upload/resize_cache/iblock/44a/500_500_1/44a63584ab6c2501045e9722324a461e.jpg);
+}
+#prx2 {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 100px;
+    position: relative;
+    float:left;
+    border-radius: 10px;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 10px;
+    font-family: cursive;
+    background-image: url(https://static.street-beat.ru/upload/iblock/4fc/4fc1923df3b6c6a6cc2b7920e8573931.jpg);
+}
+#naj_b, #ai_b, #nam_b, #nal_b, #an_b, #ac_b, #prsx_b, #prj_b, #prx2_b {
+    background-color: white;
+    border-radius: 10px;
+    height:20px;
+    width: 200px;
+    margin-top: 5px;
+    font-family: cursive;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+#naj, #nam, #nal, #ac, #ai, #an, #prsx, #prj, #prx2 {
+    transition: transform 0.5s;
+}
+#naj:hover, #nam:hover, #nal:hover, #ac:hover, #ai:hover, #an:hover, #prsx:hover, #prj:hover, #prx2:hover {
+    z-index: 1;
+    transform: scale(1.3);
+}
+#naj.active {
+    transform: translate(5%, 5%);
+    z-index: 2;
+    width: 1200px;
+    height: 910px;
+    margin-top: -40px;
+    margin-left: 45px;
+    position: fixed;
+    display:block;
+    font-size: 30px;
+    
+    justify-content: start;
+}
+#naj.active > p {
+    display: block;
+}
+#naj.active > img {
+    float: left;
+}
+#naj.active > #naj_i1 {
+    margin-top: -80px;
+}
+#naj.active > button {
+    height: 40px;
+    width: 320px;
+    border-radius: 30px;
+}
+#nam.active {
+    transform: translate(10px, 10px) scale(2);
+    z-index: 2;
+    position: fixed;
+}
+#nal.active {
+    transform: translate(10px) scale(2);
+    z-index: 2;
+    position: fixed;
+}
+#ai.active {
+    transform: translate(-500px, -250px) scale(2);
+    z-index: 2;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    width: 800px;
+    justify-content: left;
+}
+#overlay {
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position:fixed;
+    
+    display:none;
+    z-index: 1;
+    transition: transform 0.5s;
+}
